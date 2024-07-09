@@ -33,6 +33,7 @@ nav ul {
     display: flex;
     justify-content: center;
     margin: 0;
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -120,4 +121,40 @@ button {
 
 button:hover {
     background: #218838;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    header .logo {
+        max-width: 150px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    iframe {
+        height: calc(100vh - 200px); /* Adjusted for mobile view */
+    }
+
+    .content-section {
+        margin: 1rem 0;
+        padding: 1rem 0.5rem;
+    }
+
+    .content-section h2 {
+        font-size: 1.5rem;
+    }
 }
