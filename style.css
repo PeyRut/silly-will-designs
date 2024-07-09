@@ -138,6 +138,10 @@ button:hover {
         display: none;
     }
 
+    .content-section h2 {
+        display: none;
+    }
+
     iframe {
         height: calc(100vh - 150px); /* Adjust height to fit mobile view */
     }
@@ -145,9 +149,5 @@ button:hover {
     .content-section {
         margin: 1rem 0;
         padding: 1rem 0.5rem;
-    }
-
-    .content-section h2 {
-        font-size: 1.5rem;
     }
 }
