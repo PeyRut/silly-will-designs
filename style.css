@@ -130,24 +130,16 @@ button:hover {
         max-width: 150px;
     }
 
-    nav ul {
-        flex-direction: column;
+    nav {
+        display: none;
     }
 
-    nav ul li {
-        margin: 0.5rem 0;
-    }
-
-    .hero h2 {
-        font-size: 1.5rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
+    .hero {
+        display: none;
     }
 
     iframe {
-        height: 70vh; /* Set a specific height for mobile view */
+        height: calc(100vh - 150px); /* Adjust height to fit mobile view */
     }
 
     .content-section {
