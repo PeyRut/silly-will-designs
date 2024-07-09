@@ -100,6 +100,7 @@ iframe {
     border-radius: 0;
     width: 100%;
     height: calc(100vh - 250px); /* Adjust this value to fit the remaining height on the page */
+    overflow: hidden;
 }
 
 footer {
@@ -146,7 +147,7 @@ button:hover {
     }
 
     iframe {
-        height: calc(100vh - 200px); /* Adjusted for mobile view */
+        height: 70vh; /* Set a specific height for mobile view */
     }
 
     .content-section {

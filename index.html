@@ -27,7 +27,8 @@
             </div>
         </section>
         <section id="products" class="content-section full-page">
-            <iframe id="productFrame" src="https://silly-willy-designs.printify.me/products" style="width:100%; height:calc(100vh - 250px); border:none;" scrolling="no"></iframe>
+            <h2>Our Products</h2>
+            <iframe id="productFrame" src="https://silly-willy-designs.printify.me/products" style="width:100%; height:calc(100vh - 250px); border:none;"></iframe>
         </section>
         <section id="contact" class="content-section">
             <h2>Contact Us</h2>
@@ -38,5 +39,18 @@
         <p>&copy; 2024 Silly Willy Designs</p>
     </footer>
     <script src="script.js"></script>
+    <script>
+        function adjustIframeScrolling() {
+            const iframe = document.getElementById('productFrame');
+            if (window.innerWidth <= 768) {
+                iframe.setAttribute('scrolling', 'yes');
+            } else {
+                iframe.setAttribute('scrolling', 'no');
+            }
+        }
+
+        window.addEventListener('resize', adjustIframeScrolling);
+        window.addEventListener('load', adjustIframeScrolling);
+    </script>
 </body>
 </html>
