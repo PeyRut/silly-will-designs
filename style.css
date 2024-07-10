@@ -99,7 +99,7 @@ nav ul li a:hover {
 iframe {
     border-radius: 0;
     width: 100%;
-    height: calc(100vh - 200px); /* Adjust this value to fit the remaining height on the page */
+    height: calc(100vh - 150px); /* Adjust this value to fit the remaining height on the page */
     overflow: hidden;
 }
 
