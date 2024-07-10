@@ -77,7 +77,7 @@ nav ul li a:hover {
 
 .content-section {
     padding: 2rem 1rem;
-    margin: 2rem 0;
+    margin: 4rem 0 2rem 0; /* Adding 2rem (32px) to the top margin to move it down by 100px */
     background: #fff;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     border-radius: 10px;
@@ -147,7 +147,7 @@ button:hover {
     }
 
     .content-section {
-        margin: 1rem 0;
+        margin: 3rem 0 1rem 0; /* Adjusting for mobile view */
         padding: 1rem 0.5rem;
     }
 }
