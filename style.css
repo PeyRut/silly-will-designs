@@ -99,9 +99,9 @@ nav ul li a:hover {
 iframe {
     border-radius: 0;
     width: 100%;
-    height: calc(100vh); /* Reducing by 250 pixels */
+    height: 100vh; /* Set height to 100vh initially */
     overflow: hidden;
-    margin-bottom: 100px; /* Add space below iframe */
+    margin-bottom: 0; /* Remove bottom margin */
 }
 
 footer {
@@ -144,7 +144,7 @@ button:hover {
     }
 
     iframe {
-        height: calc(100vh + 150px); /* Adjust height to fit mobile view */
+        height: 100vh; /* Adjust height to fit mobile view */
     }
 
     .content-section {
