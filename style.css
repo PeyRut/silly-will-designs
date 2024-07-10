@@ -99,8 +99,9 @@ nav ul li a:hover {
 iframe {
     border-radius: 0;
     width: 100%;
-    height: calc(100vh + 250px); /* Adding 500 more pixels */
+    height: calc(100vh); /* Reducing by 250 pixels */
     overflow: hidden;
+    margin-bottom: 100px; /* Add space below iframe */
 }
 
 footer {
