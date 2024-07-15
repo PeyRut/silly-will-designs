@@ -50,10 +50,16 @@ button:hover {
 @media (max-width: 768px) {
     iframe {
         height: 100vh; /* Adjust height to fit mobile view */
+        top: 10px; /* Adjust as needed */
     }
 
     .content-section {
         margin: 0;
         padding: 0;
+    }
+
+    iframe image {
+        width: 100%;
+        height: auto; /* Maintain aspect ratio */
     }
 }
