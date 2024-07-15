@@ -22,12 +22,6 @@ body {
     border-radius: 0;
 }
 
-.content-section h2 {
-    color: #FF6F61;
-    text-align: center;
-    padding: 1rem 0;
-}
-
 iframe {
     position: absolute;
     top: 0;
@@ -54,10 +48,6 @@ button:hover {
 
 /* Responsive design for mobile */
 @media (max-width: 768px) {
-    .content-section h2 {
-        display: none;
-    }
-
     iframe {
         height: 100vh; /* Adjust height to fit mobile view */
     }
