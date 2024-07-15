@@ -4,80 +4,12 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-}
-
-header {
-    background: #FF6F61;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-    position: relative;
-}
-
-header .logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-header .logo {
-    max-width: 200px;
-    display: block;
-    margin: 0 auto;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    background: #FF8566;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    flex-wrap: wrap;
-}
-
-nav ul li {
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    display: block;
-    transition: background 0.3s;
-}
-
-nav ul li a:hover {
-    background: #FF4D4D;
-    border-radius: 5px;
-}
-
-.hero {
-    background: linear-gradient(135deg, #FF8566, #FF4D4D);
-    color: #fff;
-    padding: 2rem 1rem;
-    text-align: center;
-}
-
-.hero-content {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.hero h2 {
-    font-size: 2rem;
-    margin: 0;
-}
-
-.hero p {
-    font-size: 1.25rem;
-    margin-top: 1rem;
+    overflow: hidden; /* Disable scrolling on the main page */
 }
 
 .content-section {
-    padding: 2rem 1rem;
-    margin: 4rem 0 2rem 0; /* Adding 2rem (32px) to the top margin to move it down by 100px */
+    padding: 0;
+    margin: 0;
     background: #fff;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     border-radius: 10px;
@@ -97,18 +29,13 @@ nav ul li a:hover {
 }
 
 iframe {
-    border-radius: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100vh; /* Set height to 100vh initially */
-    overflow: hidden;
-    margin-bottom: 0; /* Remove bottom margin */
-}
-
-footer {
-    background: #FF6F61;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
+    height: 100vh; /* Set height to full viewport height */
+    border: none;
+    overflow: scroll; /* Make iframe scrollable */
 }
 
 button {
@@ -127,18 +54,6 @@ button:hover {
 
 /* Responsive design for mobile */
 @media (max-width: 768px) {
-    header .logo {
-        max-width: 150px;
-    }
-
-    nav {
-        display: none;
-    }
-
-    .hero {
-        display: none;
-    }
-
     .content-section h2 {
         display: none;
     }
@@ -148,7 +63,7 @@ button:hover {
     }
 
     .content-section {
-        margin: 3rem 0 1rem 0; /* Adjusting for mobile view */
-        padding: 1rem 0.5rem;
+        margin: 0;
+        padding: 0;
     }
 }

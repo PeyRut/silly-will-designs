@@ -16,33 +16,12 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-    <header>
-        <div class="logo-container">
-            <img src="images/logo-removebg-preview.png" alt="Silly Willy Designs Logo" class="logo">
-        </div>
-    </header>
     <main>
         <section id="products" class="content-section full-page">
             <h2>Our Products</h2>
-            <iframe id="productFrame" src="https://silly-willy-designs.printify.me/products" style="width:100%; height:100vh; border:none;"></iframe>
+            <iframe id="productFrame" src="https://silly-willy-designs.printify.me/products" style="width:100%; height:100vh; border:none; overflow:scroll;"></iframe>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 Silly Willy Designs</p>
-    </footer>
     <script src="script.js"></script>
-    <script>
-        function adjustIframeScrolling() {
-            const iframe = document.getElementById('productFrame');
-            if (window.innerWidth <= 768) {
-                iframe.setAttribute('scrolling', 'yes');
-            } else {
-                iframe.setAttribute('scrolling', 'no');
-            }
-        }
-
-        window.addEventListener('resize', adjustIframeScrolling);
-        window.addEventListener('load', adjustIframeScrolling);
-    </script>
 </body>
 </html>
