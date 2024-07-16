@@ -27,7 +27,7 @@ iframe {
     top: 0;
     left: 0;
     width: 100%;
-    height: calc(100vh - 20px); /* Set height to full viewport height minus the buffer */
+    height: calc(100vh - 50px); /* Set height to full viewport height minus a larger buffer */
     border: none;
     overflow: scroll; /* Make iframe scrollable */
 }
@@ -35,7 +35,7 @@ iframe {
 /* Responsive design for mobile */
 @media (max-width: 768px) {
     iframe {
-        height: calc(100vh - 50px); /* Adjust height to fit mobile view, leaving space for the button */
+        height: calc(100vh - 100px); /* Adjust height to fit mobile view, leaving larger space for the button */
         top: 10px; /* Adjust as needed */
     }
 

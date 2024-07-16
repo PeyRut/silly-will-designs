@@ -1,5 +1,5 @@
 function resizeIframe(iframe) {
-    iframe.style.height = (iframe.contentWindow.document.documentElement.scrollHeight + 20) + 'px'; // Add space for the buffer
+    iframe.style.height = (iframe.contentWindow.document.documentElement.scrollHeight + 50) + 'px'; // Add larger space for the buffer
 }
 
 document.addEventListener("DOMContentLoaded", function() {
