@@ -27,29 +27,15 @@ iframe {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh; /* Set height to full viewport height */
+    height: calc(100vh - 20px); /* Set height to full viewport height minus the buffer */
     border: none;
     overflow: scroll; /* Make iframe scrollable */
-}
-
-button {
-    background: #28A745;
-    color: #fff;
-    border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background 0.3s;
-}
-
-button:hover {
-    background: #218838;
 }
 
 /* Responsive design for mobile */
 @media (max-width: 768px) {
     iframe {
-        height: 100vh; /* Adjust height to fit mobile view */
+        height: calc(100vh - 50px); /* Adjust height to fit mobile view, leaving space for the button */
         top: 10px; /* Adjust as needed */
     }
 
