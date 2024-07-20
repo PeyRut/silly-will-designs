@@ -35,7 +35,7 @@ iframe {
 /* Responsive design for mobile */
 @media (max-width: 768px) {
     iframe {
-        height: calc(100vh - 100px); /* Adjust height to fit mobile view, leaving larger space for the button */
+        height: calc(100vh - 60px); /* Adjust height to fit mobile view, leaving space for the button */
         top: 10px; /* Adjust as needed */
     }
 
